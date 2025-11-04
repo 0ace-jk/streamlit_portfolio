@@ -28,23 +28,26 @@ c3 = st.container(height=300, border=False)
 
 st.markdown("<h2 style='text-align: center; color: darkviolet;'>Projetos</h2'", unsafe_allow_html=True)
 
-col31, col32, col33 = st.columns(3)
+col31, col32 = st.columns(2)
 
-project_container_height = 200
+project_container_height = 400
 
-c531, c532, c533 = col31.container(height=project_container_height), col32.container(height=project_container_height), col33.container(height=project_container_height)
+c531 = col31.container(height=project_container_height, border=True)
+c532 = col32.container(height=project_container_height, border=True)
 
-c531.markdown("<h5 style='text-align: center; color: violet;'>projeto 1</h5>", unsafe_allow_html=True)
-c532.markdown("<h5 style='text-align: center; color: violet;'>projeto 2</h5>", unsafe_allow_html=True)
-c533.markdown("<h5 style='text-align: center; color: violet;'>projeto 3</h5>", unsafe_allow_html=True)
+c531.markdown("<h5 style='text-align: center; color: violet;'>Previsão de Renda</h5>", unsafe_allow_html=True)
+c531.markdown("Este projeto utiliza a metodologia CRISP-DM para desenvolver um modelo de previsão de renda de clientes. A análise e a modelagem são realizadas em um Jupyter Notebook, e a solução final é apresentada em uma aplicação interativa com Streamlit.")
+c531.markdown("---")
+c531.markdown("<h6>Tecnologias Utilizadas:</h6>", unsafe_allow_html=True)
+c531.markdown("- Python, Pandas, Scikit-learn, Streamlit")
+col31.link_button('Ver no GitHub', 'https://github.com/0ace-jk/previsao_renda', use_container_width=True)
 
-c531.markdown("texto referente ao projeto 1, com resultados obtidos etc etc")
-c532.markdown("texto referente ao projeto 2, com muitos ganhos utilizando habilidades descritas")
-c533.markdown("texto referente ao projeto 3, foi adiquirido experiencias resultantes")
-
-col31.link_button('Projeto 1', 'url', use_container_width=True)
-col32.link_button('Projeto 2', 'url', use_container_width=True)
-col33.link_button('Projeto 3', 'url', use_container_width=True)
+c532.markdown("<h5 style='text-align: center; color: violet;'>Credit-Score</h5>", unsafe_allow_html=True)
+c532.markdown("Este projeto foi desenvolvido como um exercício didático para o curso da EBAC, com o objetivo de aplicar técnicas de machine learning para prever a inadimplência de clientes com base em seus dados.")
+c532.markdown("---")
+c532.markdown("<h6>Tecnologias Utilizadas:</h6>", unsafe_allow_html=True)
+c532.markdown("- Python, Pandas, Seaborn, Matplotlib, Scikit-learn")
+col32.link_button('Ver no GitHub', 'https://github.com/0ace-jk/Credit-Score', use_container_width=True)
 
 c4 = st.container(height=500, border=False)
 
@@ -55,4 +58,3 @@ c5.markdown('# :rainbow[O futuro é orientado por dados. E começa hoje!]')
 c5.markdown('[Linkedin](https://www.linkedin.com/in/antoniomourajr/)')
 c5.markdown('[Kaggle](https://www.kaggle.com/antoniojunior1998)')
 c5.markdown('[GitHub](https://github.com/0ace-jk)')
-
