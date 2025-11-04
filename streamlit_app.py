@@ -7,16 +7,18 @@ st.set_page_config(
 
 st.markdown("<h1 style='text-align: center; color: darkviolet;'>Antonio Moura</h1>", unsafe_allow_html=True)
 
-c1 = st.container(height=600, border=False)
+st.markdown("""
+<div style='text-align: justify;'>
+Cientista de Dados com experiência em desenvolver soluções de ponta a ponta, desde a análise exploratória e modelagem preditiva até a implementação de aplicações interativas. Habilidade em transformar dados complexos em insights acionáveis, utilizando ferramentas como Python, Pandas, Scikit-learn e Streamlit para criar modelos de machine learning robustos e visualizações de dados impactantes. Buscando aplicar meu conhecimento para resolver problemas de negócios desafiadores e impulsionar a tomada de decisões baseada em dados.
+</div>
+""", unsafe_allow_html=True)
 
-st.markdown("<h2 style='text-align: center; color: darkviolet;'>Areas de Experiência</h2", unsafe_allow_html=True)
-
-c2 = st.container(height=80, border=False)
+st.markdown("<h2 style='text-align: center; color: darkviolet;'>Areas de Experiência</h2>", unsafe_allow_html=True)
 
 col21, col22 = st.columns(2)
 
-col21.markdown("<h3 style='text-align: center; color: violet;'>Habilidades</h3", unsafe_allow_html=True)
-col22.markdown("<h3 style='text-align: center; color: violet;'>Ferramentas</h3", unsafe_allow_html=True)
+col21.markdown("<h3 style='text-align: center; color: violet;'>Habilidades</h3>", unsafe_allow_html=True)
+col22.markdown("<h3 style='text-align: center; color: violet;'>Ferramentas</h3>", unsafe_allow_html=True)
 
 c421 = col21.container(height=380, border=True)
 c422 = col22.container(height=380, border=True)
@@ -24,9 +26,7 @@ c422 = col22.container(height=380, border=True)
 c421.markdown('\nProgramação, R\n\n---\nModelagem de Dados\n\n---\nAprendizagem de Maquina\n\n---\nVisualização de Dados\n\n---\nAplicações\n\n')
 c422.markdown('\nPython, R\n\n---\nPandas, Numpy\n\n---\nScykit, Statsmodels, Regressão(ridge, Lasso)\n\n---\nMatplotlib, Seaborn\n\n---\nStreamlit\n\n')
 
-c3 = st.container(height=300, border=False)
-
-st.markdown("<h2 style='text-align: center; color: darkviolet;'>Projetos</h2'", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: darkviolet;'>Projetos</h2>", unsafe_allow_html=True)
 
 col31, col32 = st.columns(2)
 
@@ -49,12 +49,8 @@ c532.markdown("<h6>Tecnologias Utilizadas:</h6>", unsafe_allow_html=True)
 c532.markdown("- Python, Pandas, Seaborn, Matplotlib, Scikit-learn")
 col32.link_button('Ver no GitHub', 'https://github.com/0ace-jk/Credit-Score', use_container_width=True)
 
-c4 = st.container(height=500, border=False)
+st.markdown('# :rainbow[O futuro é orientado por dados. E começa hoje!]')
 
-c5 = st.container(height=500, width=600, border=False)
-
-c5.markdown('# :rainbow[O futuro é orientado por dados. E começa hoje!]')
-
-c5.markdown('[Linkedin](https://www.linkedin.com/in/antoniomourajr/)')
-c5.markdown('[Kaggle](https://www.kaggle.com/antoniojunior1998)')
-c5.markdown('[GitHub](https://github.com/0ace-jk)')
+st.markdown('[Linkedin](https://www.linkedin.com/in/antoniomourajr/)')
+st.markdown('[Kaggle](https://www.kaggle.com/antoniojunior1998)')
+st.markdown('[GitHub](https://github.com/0ace-jk)')
